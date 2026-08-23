@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minería e Industria | Orden Oculta</title>
+  <meta name="description" content="Detalles del programa de minería e industria de Orden Oculta en EVE Online. Ore Mining, Moon Mining e infraestructura.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <img src="images/logo.png" alt="Orden Oculta Logo" class="nav-logo">
+      <span class="nav-title">ORDEN OCULTA</span>
+    </div>
+    
+    <button class="nav-toggle" aria-label="Abrir menú de navegación">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-menu-wrapper">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Inicio</a></li>
+        <li class="nav-item"><a href="pve.html">PvE</a></li>
+        <li class="nav-item active"><a href="mineria-industria.html">Minería e Industria</a></li>
+        <li class="nav-item"><a href="pvp.html">PvP</a></li>
+        <li class="nav-item"><button class="btn btn-primary btn-recruit-trigger">Únete</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CABECERA DE LA PÁGINA -->
+  <section class="page-header">
+    <div class="reveal">
+      <h1>Minería e Industria</h1>
+      <p>La economía de nuestra corporación comienza con los recursos y termina con las naves listas para entrar en combate.</p>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="section-container">
+    <div class="two-col-layout">
+      <!-- Columna Principal -->
+      <div class="main-column">
+        <section class="content-block reveal">
+          <h2>Nuestros Recursos & Minería</h2>
+          <p>
+            Contamos con acceso a cinturones de asteroides ricos y a lunas corporativas exclusivas mediante ciudadelas y refinerías (Athanor/Tatara). Organizamos operaciones de minería grupal con soporte de naves industriales de comando (Orca/Rorqual) para otorgar bonificaciones masivas a todos los participantes.
+          </p>
+          <ul class="list-styled" style="margin-top: 1rem;">
+            <li><strong>Ore & Ice Mining:</strong> Minado constante de cinturones en sistemas seguros para materiales base.</li>
+            <li><strong>Moon Mining:</strong> Eventos de fractura lunar programados para extraer minerales valiosos de tierras raras.</li>
+            <li><strong>Gas Huffing:</strong> Expediciones a agujeros de gusano y sistemas de baja seguridad para recolectar gases raros necesarios para la construcción de boosters y naves avanzadas.</li>
+            <li><strong>Flotas de Minería Grupal:</strong> Operaciones coordinadas con defensas militares activas contra gankers.</li>
+          </ul>
+        </section>
+
+        <section class="content-block reveal">
+          <h2>Logística & Producción Industrial</h2>
+          <p>
+            No solo extraemos la materia prima; la transformamos. Contamos con ingenieros y fábricas de última generación para construir desde los reactores y propulsores hasta las fragatas, cruceros y cargueros corporativos.
+          </p>
+          <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+            <div class="card card-indy" style="padding: 1.5rem;">
+              <h3 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem;">Manufactura Avanzada</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-secondary);">Producción a gran escala de naves de doctrina, módulos T2/T3 y munición a precios con descuento para miembros.</p>
+            </div>
+            <div class="card card-indy" style="padding: 1.5rem;">
+              <h3 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem;">Reprocesamiento & Refinado</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-secondary);">Instalaciones con bonificaciones máximas para exprimir hasta la última unidad de mineral purificado.</p>
+            </div>
+            <div class="card card-indy" style="padding: 1.5rem;">
+              <h3 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem;">Investigación (R&D)</h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-secondary);">Copia, investigación de eficiencia de materiales (ME) y de tiempo (TE) de Blueprints corporativos.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-block reveal">
+          <h2>Programa Industrial Corporativo</h2>
+          <p>
+            Cualquier piloto puede encontrar su nicho en nuestra economía. Valoramos y apoyamos todas las especializaciones del ciclo de vida industrial:
+          </p>
+          
+          <div class="ship-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+            <div class="ship-card">
+              <div class="ship-icon">⛏️</div>
+              <div class="ship-name">Mineros</div>
+              <div class="ship-role">Extracción de Materias</div>
+            </div>
+            <div class="ship-card">
+              <div class="ship-icon">⚙️</div>
+              <div class="ship-name">Industriales</div>
+              <div class="ship-role">Manufactura & Ensamblaje</div>
+            </div>
+            <div class="ship-card">
+              <div class="ship-icon">🚛</div>
+              <div class="ship-name">Transportistas</div>
+              <div class="ship-role">Logística & Fletes</div>
+            </div>
+            <div class="ship-card">
+              <div class="ship-icon">🧪</div>
+              <div class="ship-name">Científicos</div>
+              <div class="ship-role">Planos & Copias</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Barra Lateral / Side Column -->
+      <div class="side-column">
+        <div class="content-block reveal" style="border-left: 3px solid var(--color-secondary);">
+          <h3>Buyback Corporativo</h3>
+          <p style="margin-top: 1rem; font-size: 0.95rem;">
+            ¿Tienes demasiado mineral y no quieres transportarlo a los hubs comerciales de Jita o Amarr?
+          </p>
+          <p style="font-size: 0.95rem; font-weight: 600; color: var(--color-secondary);">
+            Ofrecemos un servicio de Buyback corporativo al 90% del precio de mercado de Jita.
+          </p>
+          <p style="font-size: 0.95rem;">
+            Depositas el mineral o gas en nuestra base y nosotros te transferimos los ISK de forma inmediata. ¡Fácil, rápido y sin riesgos de transporte!
+          </p>
+        </div>
+
+        <div class="content-block reveal" style="text-align: center;">
+          <h3>Participa en los Proyectos Industriales</h3>
+          <p style="font-size: 0.95rem; margin-top: 1rem;">Colabora en la creación de súper-estructuras y naves capitales para defender nuestra alianza.</p>
+          <button class="btn btn-secondary btn-recruit-trigger" style="width: 100%; margin-top: 1.5rem;">Registrar Habilidades</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA (FOOTER) -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>ORDEN OCULTA</h3>
+        <p>EVE Online Corporation. Construyendo el futuro comercial, logístico e industrial en el espacio profundo de New Eden.</p>
+        <span class="footer-logo-text">// SECURE. STANDARDIZE. DOMINATE.</span>
+      </div>
+      <div>
+        <h4 class="footer-links-title">Enlaces Útiles</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pve.html">PvE & Incursiones</a></li>
+          <li><a href="mineria-industria.html">Minería e Industria</a></li>
+          <li><a href="pvp.html">PvP Militar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-links-title">Herramientas & Contacto</h4>
+        <ul class="footer-links">
+          <li><a href="https://discord.gg/example-placeholder" target="_blank">Discord Oficial</a></li>
+          <li><a href="https://zkillboard.com/alliance/example/" target="_blank">zKillboard</a></li>
+          <li><a href="https://evemaps.dotlan.net/" target="_blank">Dotlan Maps</a></li>
+          <li><a href="https://www.eveonline.com/" target="_blank">EVE Online</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">© 2026 ORDEN OCULTA. Fan site creado para la comunidad de EVE Online.</p>
+      <p style="font-size: 0.8rem; color: var(--color-text-secondary);">EVE Online y todas las imágenes y logos relacionados son propiedad de CCP Games.</p>
+    </div>
+  </footer>
+
+  <!-- RECRUITMENT MODAL -->
+  <div class="modal" id="recruitModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+      <h3 class="modal-title">Únete a Orden Oculta</h3>
+      <div class="modal-body">
+        <p>Buscamos tanto a veteranos curtidos como a nuevos pilotos que quieran forjar su camino en EVE Online. Estos son nuestros requisitos mínimos de reclutamiento:</p>
+        
+        <ul class="recruitment-requirements">
+          <li>Cuenta activa de EVE Online (Omega recomendada pero aceptamos Alfas con ganas de aprender).</li>
+          <li>Uso obligatorio de Discord para comunicación en operaciones de flota.</li>
+          <li>Actitud madura y respeto hacia todos los miembros de la corporación.</li>
+          <li>Voluntad de cooperar en flotas de minería, defensa o generación de ISK.</li>
+        </ul>
+
+        <h4>¿Cómo aplicar?</h4>
+        <p>
+          1. Haz clic en el botón de abajo para unirte a nuestro Discord de reclutamiento.<br>
+          2. Escribe en el canal <code>#reclutamiento-publico</code>.<br>
+          3. Uno de nuestros oficiales agendará una entrevista corta contigo.
+        </p>
+
+        <div class="modal-buttons" style="margin-top: 2rem;">
+          <a href="https://discord.gg/example-placeholder" target="_blank" class="btn btn-primary">Unirse al Discord de Reclutamiento</a>
+          <button class="btn btn-outline modal-close">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orden Oculta | EVE Online Corporation</title>
+  <meta name="description" content="Sitio oficial de ORDEN OCULTA, corporación líder de EVE Online. Únete a nuestras flotas de PvE, minería, industria y PvP.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Canvas para animación de fondo de estrellas -->
+  <canvas id="starfield"></canvas>
+  <div class="background-overlay"></div>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <img src="images/logo.png" alt="Orden Oculta Logo" class="nav-logo">
+      <span class="nav-title">ORDEN OCULTA</span>
+    </div>
+    
+    <button class="nav-toggle" aria-label="Abrir menú de navegación">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-menu-wrapper">
+      <ul class="nav-menu">
+        <li class="nav-item active"><a href="index.html">Inicio</a></li>
+        <li class="nav-item"><a href="pve.html">PvE</a></li>
+        <li class="nav-item"><a href="mineria-industria.html">Minería e Industria</a></li>
+        <li class="nav-item"><a href="pvp.html">PvP</a></li>
+        <li class="nav-item"><button class="btn btn-primary btn-recruit-trigger">Únete</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO PRINCIPAL -->
+  <section class="hero">
+    <div class="hero-content reveal">
+      <h1>ORDEN OCULTA</h1>
+      <p class="hero-subtitle">Construimos nuestro futuro entre las estrellas</p>
+      <p class="hero-description">
+        Corporación enfocada en PvE, minería, industria y PvP dentro del universo de EVE Online. Trabajamos juntos para crecer, generar ISK y conquistar nuestros objetivos en el espacio profundo.
+      </p>
+      <div class="hero-buttons">
+        <a href="#actividades" class="btn btn-outline">Explorar Actividades</a>
+        <button class="btn btn-primary btn-recruit-trigger">Únete a nosotros</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA DE ESTADÍSTICAS -->
+  <section class="stats-bar">
+    <div class="stats-container reveal">
+      <div class="stat-item">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Miembros Activos</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">Bils</div>
+        <div class="stat-label">ISK Generados/Mes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Soporte y Flotas</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Orientados al Trabajo en Equipo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE ACTIVIDADES -->
+  <section id="actividades" class="section-container">
+    <div class="section-title-wrapper reveal">
+      <h2 class="section-title">Nuestras Actividades</h2>
+      <p class="section-subtitle">Lo que hacemos en New Eden</p>
+    </div>
+
+    <div class="cards-grid">
+      <!-- PvE Card -->
+      <article class="card card-pve reveal">
+        <div class="card-image-wrapper">
+          <img src="images/pve.jpg" alt="Operación PvE de EVE Online" class="card-image">
+          <span class="card-badge badge-pve">Generación de ISK</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">PvE & Misiones</h3>
+          <p class="card-description">
+            Organizamos flotas de incursiones, ratting en sistemas seguros y wormholes de alta recompensa para desarrollar las habilidades y carteras de nuestros pilotos.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Anomalías</span>
+            <span class="tag">Wormholes</span>
+            <span class="tag">Incursiones</span>
+          </div>
+          <a href="pve.html" class="btn btn-primary">Ver PvE</a>
+        </div>
+      </article>
+
+      <!-- Minería e Industria Card -->
+      <article class="card card-indy reveal">
+        <div class="card-image-wrapper">
+          <img src="images/mining.jpg" alt="Minería e Industria en EVE Online" class="card-image">
+          <span class="card-badge badge-indy">Economía</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Minería e Industria</h3>
+          <p class="card-description">
+            La columna vertebral de nuestra corporación. Extraemos lunas llenas de minerales raros, producimos naves de combate y orquestamos logística compleja.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Moon Mining</span>
+            <span class="tag">Producción</span>
+            <span class="tag">Logística</span>
+          </div>
+          <a href="mineria-industria.html" class="btn btn-secondary">Ver Industria</a>
+        </div>
+      </article>
+
+      <!-- PvP Card -->
+      <article class="card card-pvp reveal">
+        <div class="card-image-wrapper">
+          <img src="images/pvp.jpg" alt="Combate PvP de EVE Online" class="card-image">
+          <span class="card-badge badge-pvp">Combate militar</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Player vs Player</h3>
+          <p class="card-description">
+            Defendemos nuestro territorio y patrullamos sistemas enemigos. Desde pequeñas patrullas de cazadores (small gang) hasta flotas estructuradas.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Roamings</span>
+            <span class="tag">Small Gang</span>
+            <span class="tag">Fleet Ops</span>
+          </div>
+          <a href="pvp.html" class="btn btn-danger">Ver PvP</a>
+        </div>
+      </article>
+
+      <!-- Comunidad Card -->
+      <article class="card reveal">
+        <div class="card-image-wrapper">
+          <img src="images/background.jpg" alt="Comunidad corporativa" class="card-image">
+          <span class="card-badge">Social</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Comunidad</h3>
+          <p class="card-description">
+            Más que una corporación de píxeles, somos un grupo de amigos. Fomentamos la formación, compartimos momentos divertidos en Discord y organizamos eventos internos.
+          </p>
+          <div class="card-tags">
+            <span class="tag">Discord</span>
+            <span class="tag">Entrenamiento</span>
+            <span class="tag">Flotas Escuela</span>
+          </div>
+          <button class="btn btn-outline btn-recruit-trigger">Únete a la Comunidad</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- RECRUITMENT CTA -->
+  <section class="recruitment-cta reveal">
+    <div class="cta-box">
+      <h2>¿Estás listo para dar el salto?</h2>
+      <p>Buscamos pilotos audaces para expandir nuestras operaciones en todos los sectores. No importa tu nivel de habilidad, tenemos un lugar para ti.</p>
+      <button class="btn btn-primary btn-recruit-trigger">Únete a la corporación</button>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA (FOOTER) -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>ORDEN OCULTA</h3>
+        <p>EVE Online Corporation. Construyendo el futuro comercial, logístico e industrial en el espacio profundo de New Eden.</p>
+        <span class="footer-logo-text">// SECURE. STANDARDIZE. DOMINATE.</span>
+      </div>
+      <div>
+        <h4 class="footer-links-title">Enlaces Útiles</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pve.html">PvE & Incursiones</a></li>
+          <li><a href="mineria-industria.html">Minería e Industria</a></li>
+          <li><a href="pvp.html">PvP Militar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-links-title">Herramientas & Contacto</h4>
+        <ul class="footer-links">
+          <li><a href="https://discord.gg/example-placeholder" target="_blank">Discord Oficial</a></li>
+          <li><a href="https://zkillboard.com/alliance/example/" target="_blank">zKillboard</a></li>
+          <li><a href="https://evemaps.dotlan.net/" target="_blank">Dotlan Maps</a></li>
+          <li><a href="https://www.eveonline.com/" target="_blank">EVE Online</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">© 2026 ORDEN OCULTA. Fan site creado para la comunidad de EVE Online.</p>
+      <p style="font-size: 0.8rem; color: var(--color-text-secondary);">EVE Online y todas las imágenes y logos relacionados son propiedad de CCP Games.</p>
+    </div>
+  </footer>
+
+  <!-- RECRUITMENT MODAL (MODAL ÚNETE A NOSOTROS) -->
+  <div class="modal" id="recruitModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+      <h3 class="modal-title">Únete a Orden Oculta</h3>
+      <div class="modal-body">
+        <p>Buscamos tanto a veteranos curtidos como a nuevos pilotos que quieran forjar su camino en EVE Online. Estos son nuestros requisitos mínimos de reclutamiento:</p>
+        
+        <ul class="recruitment-requirements">
+          <li>Cuenta activa de EVE Online (Omega recomendada pero aceptamos Alfas con ganas de aprender).</li>
+          <li>Uso obligatorio de Discord para comunicación en operaciones de flota.</li>
+          <li>Actitud madura y respeto hacia todos los miembros de la corporación.</li>
+          <li>Voluntad de cooperar en flotas de minería, defensa o generación de ISK.</li>
+        </ul>
+
+        <h4>¿Cómo aplicar?</h4>
+        <p>
+          1. Haz clic en el botón de abajo para unirte a nuestro Discord de reclutamiento.<br>
+          2. Escribe en el canal <code>#reclutamiento-publico</code>.<br>
+          3. Uno de nuestros oficiales agendará una entrevista corta contigo.
+        </p>
+
+        <div class="modal-buttons" style="margin-top: 2rem;">
+          <a href="https://discord.gg/example-placeholder" target="_blank" class="btn btn-primary">Unirse al Discord de Reclutamiento</a>
+          <button class="btn btn-outline modal-close">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
